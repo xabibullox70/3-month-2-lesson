@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 50px;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    color: chocolate;
+}
+img:hover{
+    cursor: pointer;
+}
+main{
+    padding: 50px;
+}
+.p1::first-line{
+    font-size: 40px;
+}
+.p1::before{
+    content: "😊";
+}
+.p1::after{
+    content: "😒";
+    font-size: 40px;
+}
+::selection {
+    color: red;
+    background: yellowgreen;
+}
+.d2{
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    width: 150px;
+    border-radius: 20px;
+    height: 50px;
+    margin: 50px;
+    transition: width 2s, height 2s,transform 5s;
+}
+.d2:hover{
+    width: 250px;
+    height: 100px;
+    transform: rotate(360deg);
+}
+.d2layn{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: backgraunds-color 1s,margin-left 2s, transform 3s;
+}
+.d2layn:hover{
+    background-color: aqua;
+    margin-left: 200px;
+    transform: rotate(180deg);
+}
+footer{
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
